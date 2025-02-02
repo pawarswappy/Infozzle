@@ -1,0 +1,548 @@
+
+.navbar{
+  position: fixed;
+  z-index: 9999;
+  top: 0%;
+  left: 0%;
+  background: #000;
+  width: 100%;
+}
+
+
+
+.navbar-brand img {
+  height: 40px;
+  /* Adjust the height as needed */
+}
+
+.btn-signup {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.btn-signup:hover {
+  background-color: #333;
+  color: white;
+}
+
+.btn-login {
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+
+
+
+
+@media (max-width:769px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+
+}
+
+
+    /* Hero Section Styling */
+    .hero-section {
+      background-color: #e8edf2; /* Light background */
+      padding: 30px 20px; /* Top/Bottom Padding for Spacing */
+      text-align: center; /* Center-align content */
+      margin-top: 100px;
+      z-index: 111;
+
+    }
+
+    .hero-section h1 {
+      font-size: 2.5rem; /* Large font size for headlines */
+      font-weight: bold;
+      color: #343a40; /* Bootstrap's dark gray */
+      margin-bottom: 20px;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      color: #6c757d; /* Bootstrap muted gray */
+      margin-bottom: 30px;
+    }
+
+    .btn-signup {
+      background-color: black; /* Primary Blue */
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-signup:hover {
+      background-color: white; /* Darker Blue */
+      color: black;
+    }
+
+    /* Responsive Tweaks */
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem; /* Slightly smaller on mobile */
+      }
+
+      .hero-section p {
+        font-size: 1rem; /* Adjust paragraph size */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-section h1 {
+        font-size: 1.8rem;
+        line-height: 1.2; /* Better readability for small screens */
+      }
+
+      .btn-signup {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+    }
+
+
+
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      align-items: end;
+      padding: 1rem;
+      position: relative;
+      top: -100px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .gallery .image-item {
+      flex: 1 1 calc(20% - 1rem);
+    }
+
+    @media (max-width: 1024px) {
+      .gallery .image-item {
+        flex: 1 1 calc(40% - 1rem);
+      }
+      .gallery {
+        display: flex;
+        align-items: center;
+        position: static;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery .image-item {
+        flex: 1 1 calc(50% - 1rem);
+      }
+      .gallery {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .gallery .image-item {
+        flex: 1 1 100%;
+      }
+    }
+
+
+
+
+
+
+
+.info-card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+.info-card h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.info-card h2 {
+  margin: 0;
+  color: #007bff; /* Bootstrap primary blue */
+  font-weight: bold;
+  font-size: 2rem; /* Larger font for numbers */
+  /* text-align: left; */
+  text-indent: 40px;
+}
+
+.container {
+  /* background-color: #f8f9fa;  */
+  border-radius: 25px;
+  padding: 20px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .info-card h2 {
+    font-size: 1.8rem; /* Slightly smaller on mobile */
+  }
+  .info-card h5 {
+    font-size: 0.9rem;
+  }
+
+  .big-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Frequently{
+    margin-top: 0px;
+  }
+
+  .Benefits{
+    margin-top: 0%;
+  }
+
+}
+.Industry{
+  margin-top: 30px;
+}
+
+.Benefits{
+  margin-top: 0%;
+}
+
+.Frequently{
+  margin-top: 30px;
+}
+
+.featured-logos img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.featured-logos img:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+.impact-heading {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.impact-description {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.stat-text {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+
+.info-card {
+  background-color: #e8f7ff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.info-card h3 {
+  font-weight: bold;
+}
+
+.rounded-image {
+  border-radius: 10px;
+}
+
+
+
+
+
+.carousel-item img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-investments {
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.carousel-controls button {
+  border: none;
+  background: none;
+}
+
+
+
+
+
+
+.number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.benefit-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.benefit-description {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.line {
+  border-bottom: 1px solid #eaeaea;
+  margin: 20px 0;
+}
+
+
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #ddd; /* Adding border bottom */
+}
+.accordion-button {
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #f8f9fa; /* Optional: Set a background color when opened */
+}
+.accordion-body {
+  padding: 1rem;
+}
+
+
+/* body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+} */
+.carousel-item {
+  padding: 40px 20px;
+  text-align: left;
+  /* background-color: #121212; */
+  /* color: white; */
+
+
+}
+.success-title {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: white;
+}
+@media (max-width: 768px) {
+  blockquote {
+    font-size: 1.2rem;
+  }
+  .author img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .impact-heading{
+    text-align: center;
+  }
+}
+
+footer{
+  width: 100%;
+  background-color:#121212 ;
+  color: white;
+  margin-top: 5rem;
+}
+
+
+.custom-section {
+  background-color: #007bff; /* Blue background */
+  border-radius: 20px;
+  padding: 60px 30px;
+  text-align: center;
+  color: white;
+}
+.custom-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.custom-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn-custom {
+  background-color: white;
+  color: #007bff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #0056b3;
+  color: white;
+}
+.btn-custom svg {
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .custom-section {
+    padding: 40px 20px;
+  }
+  .custom-section h1 {
+    font-size: 1.8rem;
+  }
+  .custom-section p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.last {
+  background-color: #121212;
+  color: #b3b3b3;
+  padding: 40px 20px;
+  font-size: 1.1rem;
+  border-top: 1px solid #2a2a2a;
+}
+.last .nav-link {
+  text-decoration: none;
+  color: white;
+
+  font-weight: 500;
+  margin-right: 20px;
+}
+.last .nav-link:hover {
+  color: #b3b3b3;
+
+}
+.last-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+.last-logo:hover{
+  color: #b3b3b3;
+
+
+}
+.last-text {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.last .support {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.last .support:hover {
+  text-decoration: underline;
+}
+
+.Copyright:hover{
+  color: white;
+
+
+}
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .footer .nav {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
